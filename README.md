@@ -6,11 +6,11 @@ LV, November 2016
 
 # Overview 
 
-* 1.0 [Hybrid Apps](#hybrid-apps)
+* 1.0 [Hybrid Apps](#10hybrid-apps)
   * 1.1 Ionic Framework
   * 1.2 Apache Cordova
-* 2.0 [Ionic Basics](#ionic-basics)
-  * 2.1 Installation
+* 2.0 [Ionic Basics](#20ionic-basics)
+  * 2.1 [Environment](#21environment)
     * 2.1.1 Local
     * 2.1.2 Cloud 9 ([https://c9.io](https://c9.io))
     * 2.1.3 Plunker ([https://plnkr.co](https://plnkr.co))
@@ -116,4 +116,12 @@ ionic emulate android
 
 [Overview](#overview)
 
-## Installation
+---
+
+### Environment
+
+For today's workshop, there are three main approaches that can be used to run Ionic:
+
+* local
+* [Cloud 9](https://c9.io): web-based IDE and Host environment - this is my own general preference
+* [Plunker](https://plnkr.co): online code editor - we'll use this because it is easy to use in this setting
