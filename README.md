@@ -6,7 +6,7 @@ LV, November 2016
 
 # Overview 
 
-* 1.0 Hybrid Apps 
+* 1.0 [Hybrid Apps](#hybrid-apps)
   * 1.1 Ionic Framework - Apache Cordova
 * 2.0 Angular Basics
   * 2.1 Directives
