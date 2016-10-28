@@ -69,4 +69,33 @@ LV, November 2016
     * Native/hybrid targeting Cordova
     * Progressive Hybrid Apps targeting [Electron](http://electron.atom.io/)
     * This is worth watching: [Electron Apps](http://electron.atom.io/apps/)
-* 
+
+Usual starting point using [Node](https://nodejs.org)
+
+```
+npm install -g ionic
+npm install -g cordova
+```
+
+Seeding a new project:
+
+```
+ionic start newprojectname blank
+```
+
+And you get this structure:
+
+```
+$ cd newprojectname && ls
+
+├── bower.json     // bower dependencies
+├── config.xml     // cordova configuration
+├── gulpfile.js    // gulp tasks
+├── hooks          // custom cordova hooks to execute on specific commands
+├── ionic.project  // ionic configuration
+├── package.json   // node dependencies
+├── platforms      // iOS/Android specific builds will reside here
+├── plugins        // where your cordova/ionic plugins will be installed
+├── scss           // scss code, which will output to www/css/
+└── www            // application - JS code and libs, CSS, images, etc.
+```
