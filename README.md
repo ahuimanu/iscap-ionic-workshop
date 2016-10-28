@@ -33,6 +33,7 @@ LV, November 2016
   * 6.3 Ionic Lab
 * 7.0 Conclusion
 
+----
 
 [Overview](#overview)
 
@@ -44,3 +45,4 @@ LV, November 2016
 
 ![Apache Cordova](http://i39.photobucket.com/albums/e188/ahuimanu/apache-cordova-4-638_zpsjgbemdvh.jpg)
 
+[Overview](#overview)
