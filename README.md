@@ -39,6 +39,7 @@ LV, November 2016
 ## Hybrid Apps
 
 ![Hybrid Native Apps](http://i39.photobucket.com/albums/e188/ahuimanu/native_html_hybrid_apps_zpsof5lyoh7.jpg)
+
 (Credit: [https://webscope.co.nz](https://webscope.co.nz))
 
 ![Apache Cordova](http://i39.photobucket.com/albums/e188/ahuimanu/apache-cordova-4-638_zpsjgbemdvh.jpg)
