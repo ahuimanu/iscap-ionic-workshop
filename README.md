@@ -10,7 +10,7 @@ LV, November 2016
   * 1.1 Ionic Framework
   * 1.2 Apache Cordova
 * 2.0 [Ionic Basics](#20ionic-basics)
-  * 2.1 [Environment](#21environment)
+  * 2.1 [Environment](#21-environment)
     * 2.1.1 Local
     * 2.1.2 Cloud 9 ([https://c9.io](https://c9.io))
     * 2.1.3 Plunker ([https://plnkr.co](https://plnkr.co))
