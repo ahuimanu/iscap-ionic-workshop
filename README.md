@@ -14,6 +14,7 @@ LV, November 2016
     * 2.1.1 Local
     * 2.1.2 Cloud 9 ([https://c9.io](https://c9.io))
     * 2.1.3 Plunker ([https://plnkr.co](https://plnkr.co))
+  * 2.2 Project Seed
 * 3.0 Angular Basics
   * 3.1 Directives
   * 3.2 Views
@@ -54,4 +55,18 @@ LV, November 2016
 
 [Overview](#overview)
 
-## 
+----
+
+## Ionic Basics
+
+* Obtain: [http://ionicframework.com](http://ionicframework.com)
+  * Usually with `npm`
+* Initialization
+* CSS/Sass
+* Browser Support
+  * Ionic 1: native/hybrid apps targeting Cordova
+  * Ionic 2: (outside the scope of this workshop): 
+    * Native/hybrid targeting Cordova
+    * Progressive Hybrid Apps targeting [Electron](http://electron.atom.io/)
+    * This is worth watching: [Electron Apps](http://electron.atom.io/apps/)
+* 
