@@ -99,3 +99,17 @@ $ cd newprojectname && ls
 ├── scss           // scss code, which will output to www/css/
 └── www            // application - JS code and libs, CSS, images, etc.
 ```
+
+Adding platforms:
+
+```
+ionic platform add ios
+ionic platform add android
+```
+
+Testing and Running:
+
+```
+ionic build android
+ionic emulate android
+```
