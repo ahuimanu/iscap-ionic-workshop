@@ -9,7 +9,7 @@ LV, November 2016
 * 1.0 [Hybrid Apps](#hybrid-apps)
   * 1.1 Ionic Framework
   * 1.2 Apache Cordova
-* 2.0 Ionic Basics
+* 2.0 [Ionic Basics](#ionic-basics)
   * 2.1 Installation
     * 2.1.1 Local
     * 2.1.2 Cloud 9 ([https://c9.io](https://c9.io))
@@ -113,3 +113,7 @@ Testing and Running:
 ionic build android
 ionic emulate android
 ```
+
+[Overview](#overview)
+
+## Installation
