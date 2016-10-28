@@ -118,7 +118,7 @@ ionic emulate android
 
 ---
 
-### Environment
+### 2.1 Environment
 
 For today's workshop, there are three main approaches that can be used to run Ionic:
 
