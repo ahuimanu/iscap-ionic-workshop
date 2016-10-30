@@ -15,7 +15,8 @@ LV, November 2016
     * 2.1.2 Cloud 9 ([https://c9.io](https://c9.io))
     * 2.1.3 Plunker ([https://plnkr.co](https://plnkr.co))
   * 2.2 Project Seed
-* 3.0 Angular Basics
+  * Ionic Codepen Demos
+* 3.0 Angular and Ionic Basics
   * 3.1 Directives
   * 3.2 Views
   * 3.3 Models
@@ -133,3 +134,7 @@ We seed projects with the `ionic` command-line tool.  We can choose from the fol
 * `ionic start app_name blank`
 * `ionic start app_name tabs`
 * `ionic start app_name sidemenu`
+
+### 2.3 Ionic Codepen Demos
+
+[Ionic Codepen Demos](http://codepen.io/ionic/pens/public/)
