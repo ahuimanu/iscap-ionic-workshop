@@ -35,7 +35,8 @@ LV, November 2016
   * 6.1 Ionic Creator
   * 6.2 Ionic Cloud
   * 6.3 Ionic Lab
-* 7.0 Conclusion
+* 7.0 Packing with Ionic Cloud
+* 8.0 Conclusion
 
 ----
 
@@ -126,8 +127,9 @@ For today's workshop, there are several  approaches that can be used to run Ioni
 
 * local
 * [Cloud 9](https://c9.io): web-based IDE and Host environment - this is my own general preference
-* [Ionic Playground](http://play.ionic.io/): provided by ionic - best for testing and trying things out
 * [Plunker](https://plnkr.co): online code editor - we'll use this because it is easy to use in this setting
+* [Ionic Playground](http://play.ionic.io/): provided by ionic - best for testing and trying things out (can't save)
+* [Ionic Creator](https://creator.ionic.io): paid tool for UI design and app development
  
 Return to [Overview](#overview)
 
@@ -202,5 +204,13 @@ Available tasks:
    state  ..........  Saves or restores state of your Ionic Application using the package.json file
    docs  ...........  Opens up the documentation for Ionic
 ```
+
+We run `ionic` for testing in the browser this way:
+
+`ionic serve`
+
+or, on Cloud 9:
+
+`ionic serve -p $PORT --nolivereload`
 
 Return to [Overview](#overview)
