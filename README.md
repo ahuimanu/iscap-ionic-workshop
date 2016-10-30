@@ -17,7 +17,9 @@ LV, November 2016
   * 3.1 [Starting the App](#31-starting-the-app)
 	* 3.1.1 [Adding a Side-Menu Structure](#311-adding-a-side-menu-structure)
 	* 3.1.2 [Initializing the App](#312-initializing-the-app)
-  * 3.2 Testing the App
+  * 3.2 [Testing the App](#32-testing-the-app)
+	* 3.2.1 [Results in a Browser](#321-results-in-a-browser)
+	* 3.2.2 [Browser Developer Tools](#322-browser-developer-tools)
   * 3.3 Completion
   * 3.4 Publishing
 * 4.0 NoSQL Document Persistence
