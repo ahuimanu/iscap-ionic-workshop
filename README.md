@@ -352,15 +352,47 @@ or, on Cloud 9:
 
 `ionic serve -p $PORT --nolivereload`
 
+Return to [Overview](#overview)
+
+----
+
 #### 3.2.1 Results in a Browser
 
 Most modern browsers will provide a means of "faking" the dimensions and behaviors of a device:
 
 ![Todo Shell App](http://i39.photobucket.com/albums/e188/ahuimanu/todo-shell-app_zpsth3ujioj.png)
 
-If you are on a development machine (not in Cloud 9):
+If you are on a development machine (not in Cloud 9) you can run your app in the simulator/emulator:
 
 ```
 ionic build android
 ionic emulate android
 ```
+
+Return to [Overview](#overview)
+
+----
+
+#### 3.2.2 Browser Developer Tools
+
+There are useful tools/features in most popular browsers for viewing an emulation/simulation of screen resolution:
+
+`CTRL + SHIFT + I`
+
+Chrome
+
+![Chrome Developer Tools](http://i39.photobucket.com/albums/e188/ahuimanu/chrome-developer-tools_zpsp7jgduwx.png)
+
+Firefox
+
+![Firefox Developer Tools](http://i39.photobucket.com/albums/e188/ahuimanu/firefox-developer-tools_zpsbzwdmcdt.png)
+
+`F12`
+
+Edge
+
+![Edge Developer Tools](http://i39.photobucket.com/albums/e188/ahuimanu/edge-developer-tools_zpsp7uww5b7.png)
+
+Return to [Overview](#overview)
+
+----
