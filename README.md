@@ -36,23 +36,26 @@ LV, November 2016
   * 6.2 Ionic Cloud
   * 6.3 Ionic Lab
 * 7.0 Packing with Ionic Cloud
+  * 7.1 Android App Keystore
+  * 7.2 Packaging and Ionic Cloud
+  * 7.3 Installing to device (Requires ADK)
 * 8.0 Conclusion
 
 ----
 
 [Overview](#overview)
 
-## Hybrid Apps
+## 1.0 Hybrid Apps
 
 ![Hybrid Native Apps](http://i39.photobucket.com/albums/e188/ahuimanu/native_html_hybrid_apps_zpsof5lyoh7.jpg)
 
 (Credit: [https://webscope.co.nz](https://webscope.co.nz))
 
-### Ionic Framework
+### 1.1 Ionic Framework
 
 ![Ionic Framework](http://i39.photobucket.com/albums/e188/ahuimanu/build-consumer-apps-using-mobile-sdk-and-ionic-framework_zpsgc3plqic.jpg)
 
-### Apache Cordova
+### 1.2 Apache Cordova
 
 ![Apache Cordova](http://i39.photobucket.com/albums/e188/ahuimanu/apache-cordova-4-638_zpsjgbemdvh.jpg)
 
@@ -60,7 +63,7 @@ LV, November 2016
 
 ----
 
-## Ionic Basics
+## 2.0 Ionic Basics
 
 * Obtain: [http://ionicframework.com](http://ionicframework.com)
   * Usually with `npm`
@@ -133,6 +136,8 @@ For today's workshop, there are several  approaches that can be used to run Ioni
  
 Return to [Overview](#overview)
 
+----
+
 ### 2.2 Project Seeding
 
 We seed projects with the `ionic` command-line tool.  We can choose from the following starter templates:
@@ -143,11 +148,15 @@ We seed projects with the `ionic` command-line tool.  We can choose from the fol
 
 Return to [Overview](#overview)
 
+----
+
 ### 2.3 Ionic Codepen Demos
 
 [Ionic Codepen Demos](http://codepen.io/ionic/pens/public/)
 
 Return to [Overview](#overview)
+
+----
 
 ### 2.4 Ionic CLI
 
@@ -214,3 +223,27 @@ or, on Cloud 9:
 `ionic serve -p $PORT --nolivereload`
 
 Return to [Overview](#overview)
+
+----
+
+### Locan Environment Considerations
+
+If you are developing locally, when you will usually end up doing to build and test on a device,
+then you will need to configured build platforms:
+
+* `ionic platform add ios` <-- can only be done if you are developing on a Mac
+* `ionic platform add android`
+
+Respectively, this will require these to be installed locally:
+
+* Xcode and the ios sdk
+* The android ADK
+
+Further, you can build and emulate on your development machine:
+
+* `ionic build android`
+* `ionic emulate android`
+
+Return to [Overview](#overview)
+
+----
