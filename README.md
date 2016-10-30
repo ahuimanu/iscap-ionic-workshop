@@ -212,14 +212,6 @@ Available tasks:
    docs  ...........  Opens up the documentation for Ionic
 ```
 
-We run `ionic` for testing in the browser this way:
-
-`ionic serve`
-
-or, on Cloud 9:
-
-`ionic serve -p $PORT --nolivereload`
-
 Return to [Overview](#overview)
 
 ----
@@ -252,6 +244,10 @@ From the "Ionic Book."
 
 ![Todo Project Mockup](http://ionicframework.com.s3.amazonaws.com/guide/0.1.0/3-mockup.png)
 
+Return to [Overview](#overview)
+
+----
+
 ### 3.1 Starting the App
 
 Since you've run the `ionic start app_name` command, you can build up `index.html` in the `www` directory:
@@ -276,6 +272,10 @@ Since you've run the `ionic start app_name` command, you can build up `index.htm
 </html>
 ```
 
+Return to [Overview](#overview)
+
+----
+
 #### 3.1.1 Adding a Side-Menu Structure
 
 Ionic provides several built-in **directives** to simplify client-side presentation and 
@@ -293,6 +293,10 @@ We'll use the `ion-side-menus` GUI element:
   </ion-side-menus>
 </body>
 ```
+
+Return to [Overview](#overview)
+
+----
 
 #### 3.1.2 Initializing the App
 
@@ -332,4 +336,31 @@ The `index.html` now looks like this:
 
   </ion-side-menus>
 </body>
+```
+
+Return to [Overview](#overview)
+
+----
+
+### 3.2 Testing the App
+
+We run `ionic` for testing in the browser this way:
+
+`ionic serve`
+
+or, on Cloud 9:
+
+`ionic serve -p $PORT --nolivereload`
+
+#### 3.2.1 Results in a Browser
+
+Most modern browsers will provide a means of "faking" the dimensions and behaviors of a device:
+
+![Todo Shell App](http://i39.photobucket.com/albums/e188/ahuimanu/todo-shell-app_zpsth3ujioj.png)
+
+If you are on a development machine (not in Cloud 9):
+
+```
+ionic build android
+ionic emulate android
 ```
