@@ -17,20 +17,19 @@ LV, November 2016
     * 2.1.4 Ionic Playground ([http://play.ionic.io/](http://play.ionic.io/))
   * 2.2 Project Seed
   * Ionic Codepen Demos
-* 3.0 Angular and Ionic Basics
-  * 3.1 Directives
-  * 3.2 Views
-  * 3.3 Models
-  * 3.4 Controllers
-  * 3.5 Services
+* 3.0 Todo Exampe (The Ionic Book)
+  * 3.1 Starting the App
+  * 3.2 Testing the App
+  * 3.3 Completion
+  * 3.4 Publishing
 * 4.0 NoSQL Document Persistence
   * 4.1 Firebase ([https://firebase.io](https://firebase.io))
-* 5.0 Example - The Ionic Book
-  * 5.1 Starting the App
-  * 5.2 Testing the App
-  * 5.3 Completion
-  * 5.4 Publishing
-  * 5.5 Firebase
+* 5.0 Angular and Ionic Basics
+  * 5.1 Directives
+  * 5.2 Views
+  * 5.3 Models
+  * 5.4 Controllers
+  * 5.5 Services 
 * 6.0 Ionic Services
   * 6.1 Ionic Creator
   * 6.2 Ionic Cloud
@@ -226,7 +225,7 @@ Return to [Overview](#overview)
 
 ----
 
-### Locan Environment Considerations
+### Local Environment Considerations
 
 If you are developing locally, when you will usually end up doing to build and test on a device,
 then you will need to configured build platforms:
@@ -247,3 +246,9 @@ Further, you can build and emulate on your development machine:
 Return to [Overview](#overview)
 
 ----
+
+## Todo Example
+
+From the "Ionic Book."
+
+![Todo Project Mockup](http://ionicframework.com.s3.amazonaws.com/guide/0.1.0/3-mockup.png)
