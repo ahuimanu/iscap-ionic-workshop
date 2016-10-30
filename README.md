@@ -125,3 +125,12 @@ For today's workshop, there are three main approaches that can be used to run Io
 * local
 * [Cloud 9](https://c9.io): web-based IDE and Host environment - this is my own general preference
 * [Plunker](https://plnkr.co): online code editor - we'll use this because it is easy to use in this setting
+* 
+
+### 2.2 Project Seeding
+
+We seed projects with the `ionic` command-line tool.  We can choose from the following starter templates:
+
+* `ionic start app_name blank`
+* `ionic start app_name tabs`
+* `ionic start app_name sidemenu`
