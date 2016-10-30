@@ -379,17 +379,17 @@ There are useful tools/features in most popular browsers for viewing an emulatio
 
 `CTRL + SHIFT + I`
 
-Chrome
+**Chrome**
 
 ![Chrome Developer Tools](http://i39.photobucket.com/albums/e188/ahuimanu/chrome-developer-tools_zpsp7jgduwx.png)
 
-Firefox
+**Firefox**
 
 ![Firefox Developer Tools](http://i39.photobucket.com/albums/e188/ahuimanu/firefox-developer-tools_zpsbzwdmcdt.png)
 
 `F12`
 
-Edge
+**Edge**
 
 ![Edge Developer Tools](http://i39.photobucket.com/albums/e188/ahuimanu/edge-developer-tools_zpsp7uww5b7.png)
 
