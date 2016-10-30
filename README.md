@@ -8,7 +8,7 @@ LV, November 2016
 
 * 1.0 [Hybrid Apps](#10-hybrid-apps)
   * 1.1 [Ionic Framework](#11-ionic-framework)
-  * 1.2 Apache Cordova
+  * 1.2 [Apache Cordova](#12-apache-cordova)
 * 2.0 [Ionic Basics](#20-ionic-basics)
   * 2.1 [Environment](#21-environment)
   * 2.2 [Project Seed](#23-project-seed)
