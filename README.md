@@ -381,7 +381,7 @@ Return to [Overview](#overview)
 
 There are useful tools/features in most popular browsers for viewing an emulation/simulation of screen resolution:
 
-`CTRL + SHIFT + I`
+**key command**: `CTRL + SHIFT + I`
 
 **Chrome**
 
@@ -391,7 +391,7 @@ There are useful tools/features in most popular browsers for viewing an emulatio
 
 ![Firefox Developer Tools](http://i39.photobucket.com/albums/e188/ahuimanu/firefox-developer-tools_zpsbzwdmcdt.png)
 
-`F12`
+**key command**: `F12`
 
 **Edge**
 
