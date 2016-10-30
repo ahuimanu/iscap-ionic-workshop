@@ -290,3 +290,43 @@ We'll use the `ion-side-menus` GUI element:
   </ion-side-menus>
 </body>
 ```
+
+#### 3.1.2 Initializing the App
+
+We join the `index.html` presentation/declarative code with the AngularJS-driven controller logic in `js/app.js`:
+
+```javascript
+angular.module('todo', ['ionic']);
+```
+
+And we join that with this `ng-app` directive in the page:
+
+```html
+<body ng-app="todo">
+```
+
+The `index.html` now looks like this:
+
+```html
+<body ng-app="todo">
+  <ion-side-menus>
+
+    <!-- Center content -->
+    <ion-side-menu-content>
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">Todo</h1>
+      </ion-header-bar>
+      <ion-content>
+      </ion-content>
+    </ion-side-menu-content>
+
+    <!-- Left menu -->
+    <ion-side-menu side="left">
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">Projects</h1>
+      </ion-header-bar>
+    </ion-side-menu>
+
+  </ion-side-menus>
+</body>
+```
