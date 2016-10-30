@@ -221,7 +221,7 @@ Return to [Overview](#overview)
 
 ----
 
-### Local Environment Considerations
+### 2.5 Local Environment Considerations
 
 If you are developing locally, when you will usually end up doing to build and test on a device,
 then you will need to configured build platforms:
