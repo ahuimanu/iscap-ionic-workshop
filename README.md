@@ -141,6 +141,9 @@ We seed projects with the `ionic` command-line tool.  We can choose from the fol
 * `ionic start app_name tabs`
 * `ionic start app_name sidemenu`
 
+![Project Seeding](http://i39.photobucket.com/albums/e188/ahuimanu/ionic-start-templates_zpshcgj5c0m.png) 
+
+
 Return to [Overview](#overview)
 
 ----
