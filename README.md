@@ -14,6 +14,7 @@ LV, November 2016
     * 2.1.1 Local
     * 2.1.2 Cloud 9 ([https://c9.io](https://c9.io))
     * 2.1.3 Plunker ([https://plnkr.co](https://plnkr.co))
+    * 2.1.4 Ionic Playground ([http://play.ionic.io/](http://play.ionic.io/))
   * 2.2 Project Seed
   * Ionic Codepen Demos
 * 3.0 Angular and Ionic Basics
@@ -115,17 +116,20 @@ ionic build android
 ionic emulate android
 ```
 
-[Overview](#overview)
+Return to [Overview](#overview)
 
 ---
 
 ### 2.1 Environment
 
-For today's workshop, there are three main approaches that can be used to run Ionic:
+For today's workshop, there are several  approaches that can be used to run Ionic:
 
 * local
 * [Cloud 9](https://c9.io): web-based IDE and Host environment - this is my own general preference
+* [Ionic Playground](http://play.ionic.io/): provided by ionic - best for testing and trying things out
 * [Plunker](https://plnkr.co): online code editor - we'll use this because it is easy to use in this setting
+ 
+Return to [Overview](#overview)
 
 ### 2.2 Project Seeding
 
@@ -135,6 +139,68 @@ We seed projects with the `ionic` command-line tool.  We can choose from the fol
 * `ionic start app_name tabs`
 * `ionic start app_name sidemenu`
 
+Return to [Overview](#overview)
+
 ### 2.3 Ionic Codepen Demos
 
 [Ionic Codepen Demos](http://codepen.io/ionic/pens/public/)
+
+Return to [Overview](#overview)
+
+### 2.4 Ionic CLI
+
+There are some tools in the ionic CLI to get to know:
+
+```
+  _             _          
+ (_)           (_)         
+  _  ___  _ __  _  ___     
+ | |/ _ \| '_ \| |/ __| 
+ | | (_) | | | | | (__     
+ |_|\___/|_| |_|_|\___|  CLI v2.1.4
+
+Usage: ionic task args
+
+
+=======================
+Available tasks: 
+(use --help or -h for more info)
+
+
+   start  ..........  Starts a new Ionic project in the specified PATH
+   serve  ..........  Start a local development server for app dev/testing
+   setup  ..........  Configure the project with a build tool (beta)
+   generate  .......  Generate pages and components
+   platform  .......  Add platform target for building an Ionic app
+   run  ............  Run an Ionic project on a connected device
+   emulate  ........  Emulate an Ionic project on a simulator or emulator
+   build  ..........  Build (prepare + compile) an Ionic project for a given platform.
+
+   plugin  .........  Add a Cordova plugin
+   resources  ......  Automatically create icon and splash screen resources (beta)
+                      Put your images in the ./resources directory, named splash or icon.
+                      Accepted file types are .png, .ai, and .psd.
+                      Icons should be 192x192 px without rounded corners.
+                      Splashscreens should be 2208x2208 px, with the image centered in the middle.
+
+   upload  .........  Upload an app to your Ionic account
+   share  ..........  Share an app with a client, co-worker, friend, or customer
+   lib  ............  Gets Ionic library version or updates the Ionic library
+   io  .............  Integrate your app with Ionic Cloud services
+   security  .......  Store your app's credentials for the Ionic Cloud
+   push  ...........  Upload APNS and GCM credentials to Ionic Push
+   package  ........  Use Ionic Package to build your app
+   config  .........  Set configuration variables for your ionic app
+   service  ........  Add an Ionic service package and install any required plugins
+   add  ............  Add an Ion, bower component, or addon to the project
+   remove  .........  Remove an Ion, bower component, or addon from the project
+   list  ...........  List Ions, bower components, or addons in the project
+   info  ...........  List information about the users runtime environment
+   help  ...........  Provides help for a certain command
+   link  ...........  Sets your Ionic App ID for your project
+   hooks  ..........  Manage your Ionic Cordova hooks
+   state  ..........  Saves or restores state of your Ionic Application using the package.json file
+   docs  ...........  Opens up the documentation for Ionic
+```
+
+Return to [Overview](#overview)
