@@ -12,7 +12,7 @@ LV, November 2016
 * 2.0 [Ionic Basics](#20-ionic-basics)
   * 2.1 [Environment](#21-environment)
   * 2.2 [Project Seed](#23-project-seed)
-  * Ionic Codepen Demos
+  * 2.3 [Ionic Codepen Demos](#23-ionic-codepen-demos)
 * 3.0 Todo Exampe (The Ionic Book)
   * 3.1 Starting the App
   * 3.2 Testing the App
@@ -54,7 +54,7 @@ LV, November 2016
 
 ![Apache Cordova](http://i39.photobucket.com/albums/e188/ahuimanu/apache-cordova-4-638_zpsjgbemdvh.jpg)
 
-[Overview](#overview)
+Return to [Overview](#overview)
 
 ----
 
