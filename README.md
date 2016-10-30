@@ -38,7 +38,7 @@ LV, November 2016
 
 ----
 
-[Overview](#overview)
+Return to [Overview](#overview)
 
 ## 1.0 Hybrid Apps
 
@@ -243,8 +243,50 @@ Return to [Overview](#overview)
 
 ----
 
-## Todo Example
+## 3.0 Todo Example
 
 From the "Ionic Book."
 
 ![Todo Project Mockup](http://ionicframework.com.s3.amazonaws.com/guide/0.1.0/3-mockup.png)
+
+### 3.1 Starting the App
+
+Since you've run the `ionic start app_name` command, you can build up `index.html` in the `www` directory:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
+    <script src="cordova.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+#### 3.1.1 Adding a Side-Menu Structure
+
+Ionic provides several built-in **directives** to simplify client-side presentation and 
+wiring up to back-end logic and data.
+
+We'll use the `ion-side-menus` GUI element:
+
+```html
+<body>
+  <ion-side-menus>
+    <ion-side-menu-content>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+    </ion-side-menu>
+  </ion-side-menus>
+</body>
+```
