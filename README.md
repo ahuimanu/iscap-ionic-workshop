@@ -7,15 +7,11 @@ LV, November 2016
 # Overview 
 
 * 1.0 [Hybrid Apps](#10-hybrid-apps)
-  * 1.1 Ionic Framework
+  * 1.1 [Ionic Framework](#11-ionic-framework)
   * 1.2 Apache Cordova
 * 2.0 [Ionic Basics](#20-ionic-basics)
   * 2.1 [Environment](#21-environment)
-    * 2.1.1 Local
-    * 2.1.2 Cloud 9 ([https://c9.io](https://c9.io))
-    * 2.1.3 Plunker ([https://plnkr.co](https://plnkr.co))
-    * 2.1.4 Ionic Playground ([http://play.ionic.io/](http://play.ionic.io/))
-  * 2.2 Project Seed
+  * 2.2 [Project Seed](#23-project-seed)
   * Ionic Codepen Demos
 * 3.0 Todo Exampe (The Ionic Book)
   * 3.1 Starting the App
