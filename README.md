@@ -125,7 +125,6 @@ For today's workshop, there are three main approaches that can be used to run Io
 * local
 * [Cloud 9](https://c9.io): web-based IDE and Host environment - this is my own general preference
 * [Plunker](https://plnkr.co): online code editor - we'll use this because it is easy to use in this setting
-* 
 
 ### 2.2 Project Seeding
 
