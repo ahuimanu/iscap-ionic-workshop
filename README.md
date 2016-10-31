@@ -1,6 +1,8 @@
 # ISCAP IONIC WORKSHOP
 
-LV, November 2016
+Las Vegas, November 2016
+
+Presented by: Jeffry Babb, Kareem Dana, and Musa Jafar
 
 ----
 
