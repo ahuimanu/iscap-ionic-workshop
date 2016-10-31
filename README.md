@@ -644,4 +644,54 @@ Return to [Overview](#overview)
 
 #### 3.3.5 Adding Projects
 
-asdf
+We add the concept of a project so that todos can be organized.
+
+**STEP 1**: Updating the content area markup:
+
+```html
+<!-- Center content -->
+<ion-side-menu-content>
+  <ion-header-bar class="bar-dark">
+    <button class="button button-icon" ng-click="toggleProjects()">
+      <i class="icon ion-navicon"></i>
+    </button>
+    <h1 class="title">{{activeProject.title}}</h1>
+    <!-- New Task button-->
+    <button class="button button-icon" ng-click="newTask()">
+      <i class="icon ion-compose"></i>
+    </button>
+  </ion-header-bar>
+  <ion-content scroll="false">
+    <ion-list>
+      <ion-item ng-repeat="task in activeProject.tasks">
+        {{task.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-side-menu-content>
+```
+
+Noteworthy additions:
+
+* we add an object for `activeProject`
+* we contain the tasks list within the project
+
+**STEP 2**: Update markup for the side menu (which will contain projects)
+
+```html
+  <!-- Left menu -->
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">Projects</h1>
+      <button class="button button-icon ion-plus" ng-click="newProject()">
+      </button>
+    </ion-header-bar>
+    <ion-content scroll="false">
+      <ion-list>
+        <ion-item ng-repeat="project in projects" ng-click="selectProject(project, $index)" ng-class="{active: activeProject == project}">
+          {{project.title}}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+```
