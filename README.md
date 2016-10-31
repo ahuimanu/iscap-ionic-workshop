@@ -946,5 +946,6 @@ You need a developer account, which will cost a one-time $25 publishing fee (as 
 You will then be able to access the [Google Play Store Developer Console](https://play.google.com/apps/publish/).  Further steps are beyond the scope of this workshop.
 Plus, we are going to look at [Ionic's Cloud Services](http://ionic.io/cloud) to help us do all of the above steps.  When we would do so, we would then have an APK ready to send to the Google Play Store.
 
+Return to [Overview](#overview)
 
-
+----
