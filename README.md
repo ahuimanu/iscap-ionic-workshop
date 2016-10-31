@@ -485,10 +485,19 @@ angular.module('todo', ['ionic'])
 
 .controller('TodoCtrl', function($scope) {
   $scope.tasks = [
-    { title: 'Collect coins' },
-    { title: 'Eat mushrooms' },
-    { title: 'Get high enough to grab the flag' },
-    { title: 'Find the Princess' }
+    { title: 'Attend Ionic Workshop' },
+    { title: 'Go to a buffet' },
+    { title: 'Participate in a panel discussion' },
+    { title: 'Go to a show' }
   ];
 })
 ```
+
+**STEP 4**: Results
+
+![Preliminary Todos](http://i39.photobucket.com/albums/e188/ahuimanu/preliminary-todos_zpszs2erxug.png)
+
+Return to [Overview](#overview)
+
+----
+
