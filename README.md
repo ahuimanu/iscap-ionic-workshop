@@ -626,3 +626,13 @@ angular.module('todo', ['ionic'])
   };
 })
 ```
+
+**STEP 4**: Progress:
+
+**Todo Main Screen**
+
+![Todo Progress](http://i39.photobucket.com/albums/e188/ahuimanu/todos-progress_zpscl3jop3v.png)
+
+**Modal Task Entry Form**
+
+![Modal Task Entry Form](http://i39.photobucket.com/albums/e188/ahuimanu/todo-modal-form_zpsh7yx6mvv.png)
