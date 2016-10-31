@@ -15,7 +15,7 @@ Presented by: Jeffry Babb, Kareem Dana, and Musa Jafar
   * 2.1 [Environment](#21-environment)
   * 2.2 [Project Seed](#23-project-seed)
   * 2.3 [Ionic Codepen Demos](#23-ionic-codepen-demos)
-* 3.0 [Todo Exampe](#30-todo-example) (The Ionic Book)
+* 3.0 [Todo Example](#30-todo-example) (The Ionic Book)
   * 3.1 [Starting the App](#31-starting-the-app)
 	* 3.1.1 [Adding a Side-Menu Structure](#311-adding-a-side-menu-structure)
 	* 3.1.2 [Initializing the App](#312-initializing-the-app)
