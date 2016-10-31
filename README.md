@@ -933,4 +933,18 @@ This step has created an unsigned APK file in our project:  `platforms/android/b
 **NOTE**: `jarsigner` comes with the [Java Software Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), 
 which is a prerequisite for the [ADK](https://developer.android.com/studio/install.html).
 
+**STEP 4**: We run the `zipalign` tool in order to optimize the APK for distribution
+
+`zipalign -v 4 HelloWorld-release-unsigned.apk HelloWorld.apk`
+
+**NOTE**: The zipalign tool can be found in `/path/to/Android/sdk/build-tools/VERSION/zipalign`
+
+**STEP 5**: Upload to Google Play Store
+
+You need a developer account, which will cost a one-time $25 publishing fee (as compared to the yearly $99 for iOS).
+
+You will then be able to access the [Google Play Store Developer Console](https://play.google.com/apps/publish/).  Further steps are beyond the scope of this workshop.
+Plus, we are going to look at [Ionic's Cloud Services](http://ionic.io/cloud) to help us do all of the above steps.  When we would do so, we would then have an APK ready to send to the Google Play Store.
+
+
 
