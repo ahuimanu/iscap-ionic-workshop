@@ -6,6 +6,8 @@ Presented by: Jeffry Babb, Kareem Dana, and Musa Jafar
 
 ----
 
+![Ionic Ecosystem](http://i39.photobucket.com/albums/e188/ahuimanu/IonicEcosystem_zpsdgztwqfs.gif)
+
 # Overview 
 
 * 1.0 [Hybrid Apps](#10-hybrid-apps)
@@ -24,12 +26,14 @@ Presented by: Jeffry Babb, Kareem Dana, and Musa Jafar
 	* 3.2.2 [Browser Developer Tools](#322-browser-developer-tools)
   * 3.3 [Completing the App](#33-completing-the-app)
     * 3.3.1 [Ionic Extends AngularJS](#331-ionic-extends-angularjs)
-	* 3.3.2 [Using ng-repeat and an Angular Controller](#332-using-ng-repeat-and-an-angular-controller)
-	* 3.3.3 [Relationship between View and Controller in AngularJS](#333-relationship-between-view-and-controller-in-angularjs)
-	* 3.3.4 [Creating Tasks](#334-creating-tasks)
-	* 3.3.5 [Adding Projects](#335-adding-projects)
-	* 3.3.6 [Checking Local Storage for Data](#336-checking-local-storage-for-data)
-  * 3.4 Publishing
+	  * 3.3.2 [Using ng-repeat and an Angular Controller](#332-using-ng-repeat-and-an-angular-controller)
+	  * 3.3.3 [Relationship between View and Controller in AngularJS](#333-relationship-between-view-and-controller-in-angularjs)
+	  * 3.3.4 [Creating Tasks](#334-creating-tasks)
+	  * 3.3.5 [Adding Projects](#335-adding-projects)
+	  * 3.3.6 [Checking Local Storage for Data](#336-checking-local-storage-for-data)
+  * 3.4 [Notes on Publishing](#34-notes-on-publishing)
+    * 3.4.1 [Adjusting Plugins](#341-adjusting-plugins)
+    * 3.4.2 [Android Publishing](#342-android-publishing)
 * 4.0 NoSQL Document Persistence
   * 4.1 Firebase ([https://firebase.io](https://firebase.io))
 * 5.0 Angular and Ionic Basics
@@ -877,7 +881,7 @@ Return to [Overview](#overview)
 
 ----
 
-### 3.4 Thoughts on Publishing
+### 3.4 Notes on Publishing
 
 The point of a  Hybrid app is to get it onto the devices of users. 
 
@@ -887,7 +891,7 @@ Return to [Overview](#overview)
 
 ----
 
-#### 3.4.1 Adjust Plugins
+#### 3.4.1 Adjusting Plugins
 
 Although our quick example didn't use Cordova plugins, these plugins are what make our hybrid app "act" native.
 
@@ -949,3 +953,7 @@ Plus, we are going to look at [Ionic's Cloud Services](http://ionic.io/cloud) to
 Return to [Overview](#overview)
 
 ----
+
+# 8.0 Conclusion
+
+![Ionic Ecosystem](http://i39.photobucket.com/albums/e188/ahuimanu/IonicEcosystem_zpsdgztwqfs.gif)
