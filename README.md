@@ -477,6 +477,10 @@ Last, we expand our module to include the controller:
 * The controller gives us access to the `$scope` object
 * The `$scope` is a **glue** between the controller and template
 * We get two-way binding with the `$scope`
+
+**$scope as glue between controller and view**
+
+![scope as glue](http://i39.photobucket.com/albums/e188/ahuimanu/ScopeisGlue_zpsfkroawmz.png)
  
 **STEP 3**: We update `www/js/app.js` accordingly:
 
@@ -501,3 +505,76 @@ Return to [Overview](#overview)
 
 ----
 
+#### 3.3.3 Creating Tasks
+
+**STEP 1**: Create an angular template using a script (this is placed just below the `ion-side-menu`):
+
+We use templates to:
+
+* modularize the application
+* manage UIs by separating layouts
+
+```html
+<script id="new-task.html" type="text/ng-template">
+
+  <div class="modal">
+
+    <!-- Modal header bar -->
+    <ion-header-bar class="bar-secondary">
+      <h1 class="title">New Task</h1>
+      <button class="button button-clear button-positive" ng-click="closeNewTask()">Cancel</button>
+    </ion-header-bar>
+
+    <!-- Modal content area -->
+    <ion-content>
+
+      <form ng-submit="createTask(task)">
+        <div class="list">
+          <label class="item item-input">
+            <input type="text" placeholder="What do you need to do?" ng-model="task.title">
+          </label>
+        </div>
+        <div class="padding">
+          <button type="submit" class="button button-block button-positive">Create Task</button>
+        </div>
+      </form>
+
+    </ion-content>
+
+  </div>
+
+</script>
+```
+
+Some noteworthy additions in the template code:
+
+* we specify user action listening with the `ng-click` directive for `closeNewTask()`
+* we do form handling with the `ng-sumbit` directive
+
+**STEP 2**: Update center content to include a header bar with a button to view tasks.  We use the the ionic `ion-header-bar` directive.
+
+```html
+  <!-- Center content -->
+  <ion-side-menu-content>
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">Todo</h1>
+      <!-- New Task button-->
+      <button class="button button-icon" ng-click="newTask()">
+        <i class="icon ion-compose"></i>
+      </button>
+    </ion-header-bar>
+    <ion-content>
+      <!-- our list and list items -->
+      <ion-list>
+        <ion-item ng-repeat="task in tasks">
+          {{task.title}}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu-content>
+```
+
+Some noteworthy additions in the code above:
+
+* we use `ng-click()` to handle user interaction
+* we use the `<i>` element to incorporate iconography in our UI
