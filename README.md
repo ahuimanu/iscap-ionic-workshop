@@ -870,3 +870,7 @@ An HTML5-compliant browser will implement local storage as a better and expanded
 Using Chrome's Developer tools (Key combo: `CTRL + SHIFT + I`), we can see local storage after running the app:
 
 ![Chrome Developer Tools Local Storage](http://i39.photobucket.com/albums/e188/ahuimanu/developer-tools-local-storage_zps0xwhki9b.png)
+
+Return to [Overview](#overview)
+
+----
