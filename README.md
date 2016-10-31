@@ -20,7 +20,7 @@ LV, November 2016
   * 3.2 [Testing the App](#32-testing-the-app)
 	* 3.2.1 [Results in a Browser](#321-results-in-a-browser)
 	* 3.2.2 [Browser Developer Tools](#322-browser-developer-tools)
-  * 3.3 Completion
+  * 3.3 Completing the App
   * 3.4 Publishing
 * 4.0 NoSQL Document Persistence
   * 4.1 Firebase ([https://firebase.io](https://firebase.io))
@@ -400,3 +400,93 @@ There are useful tools/features in most popular browsers for viewing an emulatio
 Return to [Overview](#overview)
 
 ----
+
+#### Testing Native
+
+You need developer accounts and tools in order to deploy to app stores or even test an app on your device.
+
+* ios - you must use xCode to build the output from **Ionic**
+* android - testing on your device is easy if you have debugging enables on your device:
+
+`ionic run android`
+
+Return to [Overview](#overview)
+
+----
+
+### 3.3 Completing the App
+
+Again, let's keep the target in mind:
+
+![iscap todo mockup](http://i39.photobucket.com/albums/e188/ahuimanu/todo-mockup_zpstquluqhj.png)
+
+Return to [Overview](#overview)
+
+----
+
+#### 3.3.1 Ionic Extends Angular
+
+It is important to remember that to use Ionic is to use AngularJS.
+
+A deep grounding in Angular is beyond the scope of this workshop, however, here are some resources:
+
+* [AngularJS](https://www.youtube.com/user/angularjs)
+* [Egghead.io](https://egghead.io/lessons/angularjs-binding)
+* [Thinkster.io](https://thinkster.io/a-better-way-to-learn-angularjs)
+ 
+Return to [Overview](#overview)
+
+----
+
+#### 3.3.2 Using ng-repeat and a Controller
+
+Ionic uses controllers to further subdivide both the logic and presentation in an AngularJS/Ionic app.
+
+We expand further the center content in our app:
+
+```html
+<!-- Center content -->
+<!-- all of the ion-prefixed directives are unique to ionic -->
+<ion-side-menu-content>
+  <ion-header-bar class="bar-dark">
+    <h1 class="title">Todo</h1>
+  </ion-header-bar>
+  <ion-content>
+    <!-- our list and list items -->
+    <ion-list>
+      <!-- angular directive: ng-repeat -->
+      <ion-item ng-repeat="task in tasks">
+        <!-- angular expression for inserting data into the template -->
+        {{task.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-side-menu-content>
+```
+
+Further, let's make a controller for the app:
+
+```html
+<body ng-app="todo" ng-controller="TodoCtrl">
+```
+
+Last, we expand our module to include the controller:
+
+* The controller gives us access to the `$scope` object
+* The `$scope` is a **glue** between the controller and template
+* We get two-way binding with the `$scope`
+ 
+Now, we update `www/js/app.js` accordingly:
+
+```javascript
+angular.module('todo', ['ionic'])
+
+.controller('TodoCtrl', function($scope) {
+  $scope.tasks = [
+    { title: 'Collect coins' },
+    { title: 'Eat mushrooms' },
+    { title: 'Get high enough to grab the flag' },
+    { title: 'Find the Princess' }
+  ];
+})
+```
