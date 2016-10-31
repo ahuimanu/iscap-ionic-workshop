@@ -306,17 +306,23 @@ Return to [Overview](#overview)
 
 #### 3.1.2 Initializing the App
 
+**STEP 1**:
+
 We join the `index.html` presentation/declarative code with the AngularJS-driven controller logic in `js/app.js`:
 
 ```javascript
 angular.module('todo', ['ionic']);
 ```
 
+**STEP 2**:
+
 And we join that with this `ng-app` directive in the page:
 
 ```html
 <body ng-app="todo">
 ```
+
+**STEP 3**:
 
 The `index.html` now looks like this:
 
