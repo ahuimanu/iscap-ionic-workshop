@@ -23,6 +23,8 @@ LV, November 2016
   * 3.3 [Completing the App](#33-completing-the-app)
     * 3.3.1 [Ionic Extends AngularJS](#331-ionic-extends-angularjs)
 	* 3.3.2 [Using ng-repeat and an Angular Controller](#332-using-ng-repeat-and-an-angular-controller)
+	* 3.3.3 [Relationship between View and Controller in AngularJS](#333-relationship-between-view-and-controller-in-angularjs)
+	* 3.3.4 [Creating Tasks](#334-creating-tasks)
   * 3.4 Publishing
 * 4.0 NoSQL Document Persistence
   * 4.1 Firebase ([https://firebase.io](https://firebase.io))
