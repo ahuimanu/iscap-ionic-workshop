@@ -26,6 +26,7 @@ LV, November 2016
 	* 3.3.3 [Relationship between View and Controller in AngularJS](#333-relationship-between-view-and-controller-in-angularjs)
 	* 3.3.4 [Creating Tasks](#334-creating-tasks)
 	* 3.3.5 [Adding Projects](#335-adding-projects)
+	* 3.3.6 [Checking Local Storage for Data](#336-checking-local-storage-for-data)
   * 3.4 Publishing
 * 4.0 NoSQL Document Persistence
   * 4.1 Firebase ([https://firebase.io](https://firebase.io))
@@ -847,3 +848,25 @@ Noteworthy additions above:
 
 * Ionic/Angular uses dependency injection to pass in extra features/functionality to a controller
 * The timeout pauses the app while the projects/tasks are loaded from local storage
+ 
+**STEP 5**: Results
+
+**Adding an Initial Project**
+
+![Adding an Initial Project](http://i39.photobucket.com/albums/e188/ahuimanu/add-initial-project_zps7vmxktvm.png)
+
+**Project Browser - List of Projects**
+
+![List of Projects](http://i39.photobucket.com/albums/e188/ahuimanu/list-of-projects_zpsk3nhuqdc.png)
+
+Return to [Overview](#overview)
+
+----
+
+#### 3.3.6 Checking Local Storage for Data
+
+An HTML5-compliant browser will implement local storage as a better and expanded form of cookies.
+
+Using Chrome's Developer tools (Key combo: `CTRL + SHIFT + I`), we can see local storage after running the app:
+
+![Chrome Developer Tools Local Storage](http://i39.photobucket.com/albums/e188/ahuimanu/developer-tools-local-storage_zps0xwhki9b.png)
