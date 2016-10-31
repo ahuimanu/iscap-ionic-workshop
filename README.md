@@ -505,7 +505,15 @@ Return to [Overview](#overview)
 
 ----
 
-#### 3.3.3 Creating Tasks
+#### 3.3.3 Relationship between View and Controller in AngularJS
+
+![AngularJS Controller and View](http://i39.photobucket.com/albums/e188/ahuimanu/AngularJSOverview_zpswsloarmz.png)
+
+Return to [Overview](#overview)
+
+----
+
+#### 3.3.4 Creating Tasks
 
 **STEP 1**: Create an angular template using a script (this is placed just below the `ion-side-menu`):
 
