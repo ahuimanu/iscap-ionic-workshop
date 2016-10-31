@@ -876,3 +876,61 @@ Using Chrome's Developer tools (Key combo: `CTRL + SHIFT + I`), we can see local
 Return to [Overview](#overview)
 
 ----
+
+### 3.4 Thoughts on Publishing
+
+The point of a  Hybrid app is to get it onto the devices of users. 
+
+How?
+
+Return to [Overview](#overview)
+
+----
+
+#### 3.4.1 Adjust Plugins
+
+Although our quick example didn't use Cordova plugins, these plugins are what make our hybrid app "act" native.
+
+For instance, you coud remove the console plugin for a release version:
+
+`cordova plugin rm cordova-plugin-console`
+
+Return to [Overview](#overview)
+
+----
+
+#### 3.4.2 Android Publishing
+
+In 2016 (as of November), [Android](https://www.android.com/) commands about 85% of the world-wide 
+market share for mobile operating systems (source: [Gartner via BGR](http://bgr.com/2016/05/23/smartphone-market-share-q1-2016/)).
+
+Additionally, developer options are more flexible for Android as the tools work on a variety of platforms.
+
+**STEP 1**: Generate a release build for Android
+
+`cordova build --release android`
+
+Noteworthy:
+
+* This generates a release build according to what we have set in our `config.xml` file.
+* The `config.xml` file is for Cordova configuration
+* To learn about what is possible to configure in `config.xml` have a look at the [documentation](http://cordova.apache.org/docs/en/latest/config_ref/index.html).
+
+This step has created an unsigned APK file in our project:  `platforms/android/build/outputs/apk`
+
+**NOTE**: The [Android Application Package (APK)](https://en.wikipedia.org/wiki/Android_application_package) is the package file format for distributing your Android apps
+
+**STEP 2**: Private Keystore: We next need a private keystore in order to sign APK with our private keystore that comes with the Android SDK (ADK):
+
+`keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000`
+
+**NOTE**: Both `keytool` and `adb` (which we'll use later) are in the installation directory where you ADK is installed
+
+**STEP 3**: Sign your APK with jarsigner
+
+`jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore HelloWorld-release-unsigned.apk alias_name`
+
+**NOTE**: `jarsigner` comes with the [Java Software Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), 
+which is a prerequisite for the [ADK](https://developer.android.com/studio/install.html).
+
+
