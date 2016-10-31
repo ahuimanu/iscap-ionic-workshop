@@ -25,6 +25,7 @@ LV, November 2016
 	* 3.3.2 [Using ng-repeat and an Angular Controller](#332-using-ng-repeat-and-an-angular-controller)
 	* 3.3.3 [Relationship between View and Controller in AngularJS](#333-relationship-between-view-and-controller-in-angularjs)
 	* 3.3.4 [Creating Tasks](#334-creating-tasks)
+	* 3.3.5 [Adding Projects](#335-adding-projects)
   * 3.4 Publishing
 * 4.0 NoSQL Document Persistence
   * 4.1 Firebase ([https://firebase.io](https://firebase.io))
@@ -636,3 +637,11 @@ angular.module('todo', ['ionic'])
 **Modal Task Entry Form**
 
 ![Modal Task Entry Form](http://i39.photobucket.com/albums/e188/ahuimanu/todo-modal-form_zpsh7yx6mvv.png)
+
+Return to [Overview](#overview)
+
+----
+
+#### 3.3.5 Adding Projects
+
+asdf
