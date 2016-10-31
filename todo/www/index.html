@@ -40,17 +40,18 @@
     <ion-side-menus>
   
       <!-- Center content -->
-      <!-- all of the ion-prefixed directives are unique to ionic -->
       <ion-side-menu-content>
         <ion-header-bar class="bar-dark">
           <h1 class="title">Todo</h1>
+          <!-- New Task button-->
+          <button class="button button-icon" ng-click="newTask()">
+            <i class="icon ion-compose"></i>
+          </button>
         </ion-header-bar>
         <ion-content>
           <!-- our list and list items -->
           <ion-list>
-            <!-- angular directive: ng-repeat -->
             <ion-item ng-repeat="task in tasks">
-              <!-- angular expression for inserting data into the template -->
               {{task.title}}
             </ion-item>
           </ion-list>
