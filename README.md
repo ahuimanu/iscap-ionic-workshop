@@ -20,7 +20,9 @@ LV, November 2016
   * 3.2 [Testing the App](#32-testing-the-app)
 	* 3.2.1 [Results in a Browser](#321-results-in-a-browser)
 	* 3.2.2 [Browser Developer Tools](#322-browser-developer-tools)
-  * 3.3 Completing the App
+  * 3.3 [Completing the App](#33-completing-the-app)
+    * 3.3.1 [Ionic Extends AngularJS](#331-ionic-extends-angularjs)
+	* 3.3.2 [Using ng-repeat and an Angular Controller](#332-using-ng-repeat-and-an-angular-controller)
   * 3.4 Publishing
 * 4.0 NoSQL Document Persistence
   * 4.1 Firebase ([https://firebase.io](https://firebase.io))
@@ -424,7 +426,7 @@ Return to [Overview](#overview)
 
 ----
 
-#### 3.3.1 Ionic Extends Angular
+#### 3.3.1 Ionic Extends AngularJS
 
 It is important to remember that to use Ionic is to use AngularJS.
 
@@ -438,11 +440,11 @@ Return to [Overview](#overview)
 
 ----
 
-#### 3.3.2 Using ng-repeat and a Controller
+#### 3.3.2 Using ng-repeat and an Angular Controller
 
 Ionic uses controllers to further subdivide both the logic and presentation in an AngularJS/Ionic app.
 
-We expand further the center content in our app:
+**STEP 1**: We expand further the center content in our app:
 
 ```html
 <!-- Center content -->
@@ -464,7 +466,7 @@ We expand further the center content in our app:
 </ion-side-menu-content>
 ```
 
-Further, let's make a controller for the app:
+**STEP 2**: Further, let's make a controller for the app:
 
 ```html
 <body ng-app="todo" ng-controller="TodoCtrl">
@@ -476,7 +478,7 @@ Last, we expand our module to include the controller:
 * The `$scope` is a **glue** between the controller and template
 * We get two-way binding with the `$scope`
  
-Now, we update `www/js/app.js` accordingly:
+**STEP 3**: We update `www/js/app.js` accordingly:
 
 ```javascript
 angular.module('todo', ['ionic'])
