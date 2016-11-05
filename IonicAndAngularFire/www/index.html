@@ -16,11 +16,30 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     
     <!-- put other libraries here -->
-    <!-- Firebase -->
-    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-    <!-- AngularFire -->
-    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>    
+    <!-- Firebase 2.x -->
+    <!--<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>-->
+    
+    <!-- Firebase 3.x -->
+    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+    
+    <!-- AngularFire 1.x -->
+    <!--<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>-->
+    
+    <!-- AngularFire 2.x -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>    
+    
+    <!-- initialize Firebase -->
+    <script>
+      var config = {
+        apiKey: "AIzaSyAsyFaAjeoM1voGv_Co22UapUgpkfurvPo",
+        authDomain: "ionic-and-firebase.firebaseapp.com",
+        databaseURL: "https://ionic-and-firebase.firebaseio.com",
+        storageBucket: "ionic-and-firebase.appspot.com"
+      };    
+      
+      firebase.initializeApp(config);      
 
+    </script>
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 

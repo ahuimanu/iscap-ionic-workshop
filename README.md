@@ -987,19 +987,43 @@ Let's try [Firebase](https://www.firebase.google.com).
 **STEP 1**: We first add support for Firebase.
 
 ```html
-<!-- Firebase -->
+<!-- Firebase 2.x -->
 <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-<!-- AngularFire -->
+
+<!-- AngularFire 1.x -->
 <script src="https://cdn.firebase.com/libs/angularfire/1.1.4/angularfire.min.js"></script>
+
+<!-- Firebase 3.x -->
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+
+<!-- AngularFire 2.x -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script> 
+
 ```
 
-We then ensure that firebase is injected as a dependency of our model:
+**NOTE**: For Firebase 3.0 we need to init Firebase in our html file:
+
+```html
+<!-- initialize Firebase -->
+<script>
+  // Initialize the Firebase SDK
+  var config = {
+    apiKey: '<your-api-key>',
+    authDomain: '<your-auth-domain>',
+    databaseURL: '<your-database-url>',
+    storageBucket: '<your-storage-bucket>'
+  };
+  firebase.initializeApp(config);
+</script>
+```
+
+**STEP 2**: We then ensure that firebase is injected as a dependency of our module:
 
 ```javascript
 angular.module("starter", ["ionic", "firebase"])
 ```
 
-We can build a factory that accesses firebase:
+**STEP 3**: We can build a factory that accesses firebase:
 
 ```javascript
 .factory("Items", function($firebaseArray) {
@@ -1008,7 +1032,7 @@ We can build a factory that accesses firebase:
 })
 ```
 
-We can then inject our Items service as a dependency.
+**STEP 4**: We can then inject our Items service as a dependency.
 
 ```javascript
 .controller("ListCtrl", function($scope, Items) {
@@ -1023,6 +1047,12 @@ We can then inject our Items service as a dependency.
   };
 });
 ```
+
+## 4.2 Firebase APIs
+
+### 4.2.1 REST API
+
+
 
 # 8.0 Conclusion
 

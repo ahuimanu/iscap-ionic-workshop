@@ -1,8 +1,8 @@
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
-// 'IonicAndFirebase' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of dependencies
+// 'IonicAndAngularFire' is the name of this angular module example (also set in a <body> attribute in index.html)
+// the 2nd parameter is an array of dependencies - we introduce firebase
 angular.module('IonicAndAngularFire', ['ionic', 'firebase'])
 
 .run(function($ionicPlatform) {
@@ -24,28 +24,31 @@ angular.module('IonicAndAngularFire', ['ionic', 'firebase'])
 })
 
 /**
- * The AngularFireService factory uses the Firebas REST API to CRUD data to firebase.
- * it uses the REST endpoints described here: https://www.firebase.com/docs/rest/api/
+ * The AngularFireService factory uses the angularfire library to CRUD data to firebase.
  */
 .factory("AngularFireService", function($firebaseArray, $firebaseObject){
   
   var AngularFireService = {};
+
+  /* AngularFire 1.x */
+  //AngularFireService.projectsUrl = "https://ionic-and-firebase.firebaseio.com/Projects";
+  //AngularFireService.projectsRef = new Firebase(AngularFireService.projectsUrl);
+  //AngularFireService.lastActiveProjectUrl = "https://ionic-and-firebase.firebaseio.com/lastActiveProject";
+  //AngularFireService.lastActiveProjectRef = new Firebase(AngularFireService.lastActiveProjectUrl);
   
-  AngularFireService.projectsUrl = "https://ionic-and-firebase.firebaseio.com/Projects";
-  AngularFireService.projectsRef = new Firebase(AngularFireService.projectsUrl);
-  AngularFireService.lastActiveProjectUrl = "https://ionic-and-firebase.firebaseio.com/lastActiveProject";
-  AngularFireService.lastActiveProjectRef = new Firebase(AngularFireService.lastActiveProjectUrl);
+  /* AngularFire 2.x */
+  AngularFireService.projectsRef = new firebase.database().ref().child("Projects");
   AngularFireService.projects = $firebaseArray(AngularFireService.projectsRef);
+  
+  AngularFireService.lastActiveProjectRef = new firebase.database().ref().child("lastActiveProject");
   AngularFireService.lastActiveProject = $firebaseObject(AngularFireService.lastActiveProjectRef);
-  
-  
-  
+
+
   // GET ALL PROJECTS
   AngularFireService.all = function(){
     //returns the promise
     return AngularFireService.projects.$loaded();
   };
-  
 
   //CREATE NEW PROJECT
   AngularFireService.newProject = function(projectTitle) {
@@ -71,8 +74,23 @@ angular.module('IonicAndAngularFire', ['ionic', 'firebase'])
     
     var url = AngularFireService.projectsUrl + "/" + index + "/tasks";
     console.log(url);
+    
+    //the angularfire 2.x approach
     var ref = new Firebase(url);
     var tasks = $firebaseArray(ref);
+    
+    //the angularfire 3.x approach
+    // See https://firebase.google.com/docs/web/setup#project_setup for how to
+    // auto-generate this config
+    var config = {
+      apiKey: "AIzaSyAsyFaAjeoM1voGv_Co22UapUgpkfurvPo",
+      authDomain: "ionic-and-firebase.firebaseapp.com",
+      databaseURL: "https://ionic-and-firebase.firebaseio.com"
+    };
+    
+    firebase.initializeApp(config);
+    
+    var tasks = firebase.database().ref();
     
     //don't for get asynch
     tasks.$loaded().then(function(){
