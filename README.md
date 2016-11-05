@@ -35,7 +35,8 @@ Presented by: Jeffry Babb, Kareem Dana, and Musa Jafar
     * 3.4.1 [Adjusting Plugins](#341-adjusting-plugins)
     * 3.4.2 [Android Publishing](#342-android-publishing)
 * 4.0 NoSQL Document Persistence
-  * 4.1 Firebase ([https://firebase.io](https://firebase.io))
+  * 4.1 Firebase ([https://firebase.google.com/](https://firebase.google.com/))
+    * 4.2 
 * 5.0 Angular and Ionic Basics
   * 5.1 Directives
   * 5.2 Views
@@ -953,6 +954,74 @@ Plus, we are going to look at [Ionic's Cloud Services](http://ionic.io/cloud) to
 Return to [Overview](#overview)
 
 ----
+
+# 4.0 NoSQL Document Persistence
+
+## 4.1 Ionic and Firebase
+
+Using a Backend-as-a-Service REST API for data persistence.
+
+We use a hybrid of these sources:
+
+* [http://ionicframework.com/docs/guide/starting.html](http://ionicframework.com/docs/guide/starting.html)
+* [https://www.firebase.com/docs/web/libraries/ionic/guide.html](https://www.firebase.com/docs/web/libraries/ionic/guide.html)
+
+## 4.1.1 Converting the Previous Example to use Firebase
+
+Complete the simple example in [The Ionic Book](http://ionicframework.com/docs/guide/).
+
+**NOTE**: Take note that the completed example above uses LocalStorage for persistence.
+
+## 4.1.2 NoSQL Goal
+
+Can we use a BaaS REST API as a solution for storing the data we need?
+
+Let's try [Firebase](https://www.firebase.google.com).
+
+* Create an account
+* Create a new project
+* Connect
+
+## 4.1.3 Integrating Firebase
+
+**STEP 1**: We first add support for Firebase.
+
+```html
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.1.4/angularfire.min.js"></script>
+```
+
+We then ensure that firebase is injected as a dependency of our model:
+
+```javascript
+angular.module("starter", ["ionic", "firebase"])
+```
+
+We can build a factory that accesses firebase:
+
+```javascript
+.factory("Items", function($firebaseArray) {
+  var itemsRef = new Firebase("https://<YOUR-FIREBASE-APP>.firebaseio.com/items");
+  return $firebaseArray(itemsRef);
+})
+```
+
+We can then inject our Items service as a dependency.
+
+```javascript
+.controller("ListCtrl", function($scope, Items) {
+  $scope.items = Items;
+  $scope.addItem = function() {
+    var name = prompt("What do you need to buy?");
+    if (name) {
+      $scope.items.$add({
+        "name": name
+      });
+    }
+  };
+});
 
 # 8.0 Conclusion
 
