@@ -957,6 +957,8 @@ Return to [Overview](#overview)
 
 # 4.0 NoSQL Document Persistence
 
+
+
 ## 4.1 Ionic and Firebase
 
 Using a Backend-as-a-Service REST API for data persistence.
@@ -1052,7 +1054,45 @@ angular.module("starter", ["ionic", "firebase"])
 
 ### 4.2.1 REST API
 
+The REST api calls HTTP endpoints for CRUD operations.
 
+[Firebase Rest Code](https://github.com/ahuimanu/iscap-ionic-workshop/tree/master/IonicAndAngularFire)
+
+### 4.2.2 AngularFire API
+
+The AngularFire api makes JavaScript calls that are embedded in your Angular application.
+
+[AngularFire Code](https://github.com/ahuimanu/iscap-ionic-workshop/tree/master/IonicAndAngularFire)
+
+# 5.0 Angular and Ionic Basics
+
+Let's review some principle features and mechanics of the frameworks with experts from the above project exaples:
+
+## 5.1 Angular/Ionic Directives
+
+## 5.2 Angular/Ionic Views
+
+## 5.3 Angular/Ionic Models
+
+## 5.4 Angular/Ionic Controllers
+
+## 5.5 Angular/Ionic Services
+
+# 6.0 Ionic Services
+
+## 6.1 Ionic Creator
+
+## 6.2 Ionic Cloud
+
+## 6.3 Ionic Lab
+
+# 7.0 Packaging and Deploying with Ionic Cloud
+
+## 7.1 Android App Keystore
+
+## 7.2 Packaging and Ionic Cloud
+
+## 7.3 Installing to a device (Requies ADK)
 
 # 8.0 Conclusion
 
