@@ -966,13 +966,13 @@ We use a hybrid of these sources:
 * [http://ionicframework.com/docs/guide/starting.html](http://ionicframework.com/docs/guide/starting.html)
 * [https://www.firebase.com/docs/web/libraries/ionic/guide.html](https://www.firebase.com/docs/web/libraries/ionic/guide.html)
 
-## 4.1.1 Converting the Previous Example to use Firebase
+### 4.1.1 Converting the Previous Example to use Firebase
 
 Complete the simple example in [The Ionic Book](http://ionicframework.com/docs/guide/).
 
 **NOTE**: Take note that the completed example above uses LocalStorage for persistence.
 
-## 4.1.2 NoSQL Goal
+### 4.1.2 NoSQL Goal
 
 Can we use a BaaS REST API as a solution for storing the data we need?
 
@@ -982,7 +982,7 @@ Let's try [Firebase](https://www.firebase.google.com).
 * Create a new project
 * Connect
 
-## 4.1.3 Integrating Firebase
+### 4.1.3 Integrating Firebase
 
 **STEP 1**: We first add support for Firebase.
 
@@ -1022,6 +1022,7 @@ We can then inject our Items service as a dependency.
     }
   };
 });
+```
 
 # 8.0 Conclusion
 
