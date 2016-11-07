@@ -1265,7 +1265,10 @@ Return to [Overview](#overview)
 
 ## 7.3 Installing to a device (Requies ADK)
 
-* This requires that the ADK is installed.  
+* This requires that the ADK is installed.
+* Requires that you have the proper USB drivers for your device
+  * OSX: [Android File Transfer](https://www.android.com/filetransfer/)
+  * Windows: Google USB Driver via the Android SDK Manager
 * The target device is attached via USB to your computer.  
 * You've located the `adb` tool (`<ADK Directory>\platform-tools\`)
 * Type the following from a command prompt (with sufficient privileges):
