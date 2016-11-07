@@ -1110,11 +1110,11 @@ Directives can be custom attributes or elements:
 
 ![Views and Models](http://i39.photobucket.com/albums/e188/ahuimanu/concepts-databinding1_zpshrebvadx.png)
 
-## 5.3 Angular/Ionic Models
+![Scope](http://i39.photobucket.com/albums/e188/ahuimanu/concepts-databinding2_zpsz0ufdacq.png)
 
-## 5.4 Angular/Ionic Controllers
+## 5.3 Angular/Ionic Controllers and Services
 
-## 5.5 Angular/Ionic Services
+![Controllers and Services](http://i39.photobucket.com/albums/e188/ahuimanu/concepts-module-service_zpsg960gvph.png)
 
 # 6.0 Ionic Services
 
