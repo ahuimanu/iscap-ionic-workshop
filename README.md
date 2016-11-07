@@ -1209,7 +1209,7 @@ Return to [Overview](#overview)
 
 ----
 
-## 6.3 Ionic View
+## 6.4 Ionic View
 
 Return to [Overview](#overview)
 
