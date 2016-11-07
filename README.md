@@ -1253,6 +1253,12 @@ We package with this command:
 
 `ionic package build PLATFORM_TAG --profile PROFILE_TAG --release`
 
+specifically for my example:
+
+`ionic package build android --profile iscap_todo`
+
+Now, you can return to your project in ionic cloud and see this new build.
+
 Return to [Overview](#overview)
 
 ----
