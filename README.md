@@ -1275,6 +1275,8 @@ Return to [Overview](#overview)
 
 `adb install <APK_FILE>`
 
+[credit](http://vbraille.cs.washington.edu/doc/how_to_install_apks.pdf)
+
 Return to [Overview](#overview)
 
 ----
