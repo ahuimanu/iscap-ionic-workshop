@@ -978,7 +978,9 @@ Complete the simple example in [The Ionic Book](http://ionicframework.com/docs/g
 
 Connect our application to a Cloud-based persistence service like Firebase.
 
-![Let's try Firebase](http://i39.photobucket.com/albums/e188/ahuimanu/FirebaseAPIs-Kiki_zpsif4qjqg1.png)
+![Let's try Firebase: Credit: http://kikithedeveloper.weebly.com/blog/firebase-api-child-added](http://i39.photobucket.com/albums/e188/ahuimanu/FirebaseAPIs-Kiki_zpsif4qjqg1.png)
+
+
 
 Let's try [Firebase](https://www.firebase.google.com).
 
