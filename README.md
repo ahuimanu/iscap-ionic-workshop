@@ -1093,7 +1093,7 @@ The AngularFire api makes JavaScript calls that are embedded in your Angular app
 
 [AngularFire Code](https://github.com/ahuimanu/iscap-ionic-workshop/tree/master/IonicAndAngularFire)
 
-# 5.0 Angular and Ionic Basics
+# 5.0 Angular and Ionic Basic Concepts
 
 Let's review some principle features and mechanics of the frameworks with experts from the above project exaples:
 
@@ -1102,24 +1102,13 @@ Let's review some principle features and mechanics of the frameworks with expert
 Directives can be custom attributes or elements:
 
 ```html
-      <!-- Left menu -->
-      <ion-side-menu side="left">
-        <ion-header-bar class="bar-dark">
-          <h1 class="title">Projects</h1>
-          <button class="button button-icon ion-plus" ng-click="newProject()">
-          </button>
-        </ion-header-bar>
-        <ion-content scroll="false">
-          <ion-list>
-            <ion-item ng-repeat="project in projects" ng-click="selectProject(project, $index)" ng-class="{active: activeProject == project}">
-              {{project.title}}
-            </ion-item>
-          </ion-list>
-        </ion-content>
-      </ion-side-menu>
+<input ng-model="foo">
+<person>{{name}}</person>
 ```
 
-## 5.2 Angular/Ionic Views
+## 5.2 Angular/Ionic Views and Models
+
+![Views and Models](http://i39.photobucket.com/albums/e188/ahuimanu/concepts-databinding1_zpshrebvadx.png)
 
 ## 5.3 Angular/Ionic Models
 
