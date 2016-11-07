@@ -1273,3 +1273,7 @@ Return to [Overview](#overview)
 # 8.0 Conclusion
 
 ![Ionic Ecosystem](http://i39.photobucket.com/albums/e188/ahuimanu/IonicEcosystem_zpsdgztwqfs.gif)
+
+Return to [Overview](#overview)
+
+----
