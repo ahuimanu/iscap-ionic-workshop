@@ -957,7 +957,7 @@ Return to [Overview](#overview)
 
 # 4.0 NoSQL Document Persistence
 
-
+![SQL and NoSQL](http://i39.photobucket.com/albums/e188/ahuimanu/cloud_sql_nosql_cropped_zps9i18pkbj.jpg)
 
 ## 4.1 Ionic and Firebase
 
