@@ -88,12 +88,51 @@ Return to [Overview](#overview)
     * Progressive Hybrid Apps targeting [Electron](http://electron.atom.io/)
     * This is worth watching: [Electron Apps](http://electron.atom.io/apps/)
 
+Return to [Overview](#overview)
+
+---
+
+### 2.1 Environment
+
+For today's workshop, there are several approaches that can be used to run Ionic:
+
+* local
+* [Cloud 9](https://c9.io): web-based IDE and Host environment - this is my own general preference
+* [Codeanywhere](https://codeanywhere.com): web-based IDE and Host environment - nearly equivalent to C9
+* [Plunker](https://plnkr.co): online code editor - we'll use this because it is easy to use in this setting
+* [Ionic Creator](https://creator.ionic.io): paid tool for UI design and app development* 
+
+For today, you'll be able to use **Codeanywhere** or **Plunker** for free.  Use **Codeanywhere**!!!
+
+* Create a project or container
+* Use Ubuntu if you can and update the packages repositories
+ 
+`sudo apt-get update`
+
+* When you create a project, ensure `nodejs` is installed:
+
+`sudo apt-get install nodejs`
+
+* Also, ensure `npm` is installed:
+
+`sudo apt-get install npm`
+
 Usual starting point using [Node](https://nodejs.org)
 
 ```
-npm install -g ionic
-npm install -g cordova
+sudo npm install -g ionic
+sudo npm install -g cordova
 ```
+
+**NOTE**: on codeanywhere, you'll need to first update your container:
+
+```
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
+
+And then you can proceed with the steps above.
 
 Seeding a new project:
 
@@ -131,20 +170,6 @@ Testing and Running:
 ionic build android
 ionic emulate android
 ```
-
-Return to [Overview](#overview)
-
----
-
-### 2.1 Environment
-
-For today's workshop, there are several  approaches that can be used to run Ionic:
-
-* local
-* [Cloud 9](https://c9.io): web-based IDE and Host environment - this is my own general preference
-* [Plunker](https://plnkr.co): online code editor - we'll use this because it is easy to use in this setting
-* [Ionic Playground](http://play.ionic.io/): provided by ionic - best for testing and trying things out (can't save)
-* [Ionic Creator](https://creator.ionic.io): paid tool for UI design and app development
  
 Return to [Overview](#overview)
 
@@ -1073,6 +1098,26 @@ The AngularFire api makes JavaScript calls that are embedded in your Angular app
 Let's review some principle features and mechanics of the frameworks with experts from the above project exaples:
 
 ## 5.1 Angular/Ionic Directives
+
+Directives can be custom attributes or elements:
+
+```html
+      <!-- Left menu -->
+      <ion-side-menu side="left">
+        <ion-header-bar class="bar-dark">
+          <h1 class="title">Projects</h1>
+          <button class="button button-icon ion-plus" ng-click="newProject()">
+          </button>
+        </ion-header-bar>
+        <ion-content scroll="false">
+          <ion-list>
+            <ion-item ng-repeat="project in projects" ng-click="selectProject(project, $index)" ng-class="{active: activeProject == project}">
+              {{project.title}}
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+```
 
 ## 5.2 Angular/Ionic Views
 
