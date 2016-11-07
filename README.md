@@ -34,24 +34,28 @@ Presented by: Jeffry Babb, Kareem Dana, and Musa Jafar
   * 3.4 [Notes on Publishing](#34-notes-on-publishing)
     * 3.4.1 [Adjusting Plugins](#341-adjusting-plugins)
     * 3.4.2 [Android Publishing](#342-android-publishing)
-* 4.0 NoSQL Document Persistence
-  * 4.1 Firebase ([https://firebase.google.com/](https://firebase.google.com/))
-    * 4.2 
-* 5.0 Angular and Ionic Basics
-  * 5.1 Directives
-  * 5.2 Views
-  * 5.3 Models
-  * 5.4 Controllers
-  * 5.5 Services 
-* 6.0 Ionic Services
-  * 6.1 Ionic Creator
-  * 6.2 Ionic Cloud
-  * 6.3 Ionic Lab
-* 7.0 Packing with Ionic Cloud
-  * 7.1 Android App Keystore
-  * 7.2 Packaging and Ionic Cloud
-  * 7.3 Installing to device (Requires ADK)
-* 8.0 Conclusion
+* 4.0 [NoSQL Document Persistence](#40-nosql-document-persistence)
+  * 4.1 [Ionic and Firebase](#41-ionic-and-firebase)
+    * 4.1.1 [Converting the Previous Example to use Firebase](#411-converting-the-previous-example-to-use-firebase)
+    * 4.1.2 [NoSQL Goal](#412-nosql-goal)
+    * 4.1.3 [Integrating Firebase](#413-integrating-firebase)
+  * 4.2 [Firebase APIs](#42-firebase-apis)
+    * 4.2.1 [REST API](#421-rest-api)
+    * 4.2.2 [AngularFire API](#422-angularfire-api)
+* 5.0 [Angular and Ionic Basic Concepts](#50-angular-and-ionic-basic-concepts)
+  * 5.1 [Angular/Ionic Directives](#51-angular/ionic-directives)
+  * 5.2 [Angular/Ionic Views and Models](#52-angular/ionic-views-and-models)
+  * 5.3 [Angular/Ionic Controllers and Services](#53-angular/ionic-controllers-and-services)
+* 6.0 [Ionic Services](#60-ionic-services)
+  * 6.1 [Ionic Cloud](#61-ionic-cloud)
+  * 6.2 [Ionic Creator](#62-ionic-creator)
+  * 6.3 [Ionic Lab](#63-ionic-lab)
+  * 6.4 [Ionic View](#64-ionic-view)
+* 7.0 [Packing with Ionic Cloud](#70-packaging-with-ionic-cloud)
+  * 7.1 [Android App Keystore](#71-android-app-keystore)
+  * 7.2 [Packaging and Ionic Cloud](#72-packaging-and-ionic-cloud)
+  * 7.3 [Installing to device (Requires ADK)](#73-installing-to-device)
+* 8.0 [Conclusion](#80-conclusion)
 
 ----
 
@@ -1036,7 +1040,7 @@ Let's try [Firebase](https://www.firebase.google.com).
 
 * Create an account
 * Create a new project
-* Connect
+* Connect with REST or AngularFire
  
 Return to [Overview](#overview)
 
@@ -1215,16 +1219,56 @@ Return to [Overview](#overview)
 
 The final main point to make is the ability to build your app in the cloud.
 
-To do so, we will take the following steps:
+To do so, we will take the following steps with an Android use case assumed:
 
 * establish a security certificate in the ionic cloud dashboard
-* 
+* package your app for building in the ionic cloud service
+* do a cloud-based build
+* download APK 
+* install to device
+
+Return to [Overview](#overview)
+
+----
 
 ## 7.1 Android App Keystore
 
+We must have the JDK and ADK installed first.  
+
+Then, run this command:
+
+`keytool -genkey -v -keystore MY-RELEASE-KEY.keystore -alias MY_ALIAS_NAME -keyalg RSA -keysize 2048 -validity 10000`
+
+Next, upload your keystore to your app's dashboard settings:
+
+![Ionic Cloud App Dashboard settings](http://docs.ionic.io/img/ss-profiles-credentials-android-build.png)
+
+Return to [Overview](#overview)
+
+----
+
 ## 7.2 Packaging and Ionic Cloud
 
+We package with this command:
+
+`ionic package build PLATFORM_TAG --profile PROFILE_TAG --release`
+
+Return to [Overview](#overview)
+
+----
+
 ## 7.3 Installing to a device (Requies ADK)
+
+* This requires that the ADK is installed.  
+* The target device is attached via USB to your computer.  
+* You've located the `adb` tool (`<ADK Directory>\platform-tools\`)
+* Type the following from a command prompt (with sufficient privileges):
+
+`adb install <APK_FILE>`
+
+Return to [Overview](#overview)
+
+----
 
 # 8.0 Conclusion
 
