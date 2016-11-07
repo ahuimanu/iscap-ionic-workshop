@@ -104,10 +104,12 @@ For today's workshop, there are several approaches that can be used to run Ionic
 
 For today, you'll be able to use **Codeanywhere** or **Plunker** for free.  Use **Codeanywhere**!!!
 
+**NOTE**: it is assumed that you are using an Ubuntu-based container or VM
+
 * Create a project or container
 * Use Ubuntu if you can and update the packages repositories
  
-`sudo apt-get update`
+`sudo apt-get update && sudo apt-get upgrade`
 
 * When you create a project, ensure `nodejs` is installed:
 
@@ -185,6 +187,19 @@ We seed projects with the `ionic` command-line tool.  We can choose from the fol
 
 ![Project Seeding](http://i39.photobucket.com/albums/e188/ahuimanu/ionic-start-templates_zpshcgj5c0m.png) 
 
+Return to [Overview](#overview)
+
+----
+
+### 2.3 Cloning the Code
+
+You can always clone the code examples we cover by running this git command:
+
+`git clone git@github.com:ahuimanu/iscap-ionic-workshop.git`
+
+You might want to use a different name to copy into:
+
+`git clone git@github.com:ahuimanu/iscap-ionic-workshop.git <target-directory>`
 
 Return to [Overview](#overview)
 
@@ -1160,18 +1175,25 @@ Ionic has two main organizational branches:
 
 * [ionic.io](http://ionic.io/) - for-profit services
 * [ionicframework.com](http://ionicframework.com/) - open source
-* 
-Return to [Overview](#overview)
-
-----
-
-## 6.1 Ionic Creator
 
 Return to [Overview](#overview)
 
 ----
 
-## 6.2 Ionic Cloud
+## 6.1 Ionic Cloud
+
+* This is a cloud-based app deployment service currently in Beta. It will be a paid 
+service when it is out of Beta.
+* You will upload your project to Ionic's cloud service by invoking the following
+command in your project folder:
+
+`ionic upload`
+
+Return to [Overview](#overview)
+
+----
+
+## 6.2 Ionic Creator
 
 Return to [Overview](#overview)
 
@@ -1183,7 +1205,20 @@ Return to [Overview](#overview)
 
 ----
 
+## 6.3 Ionic View
+
+Return to [Overview](#overview)
+
+----
+
 # 7.0 Packaging and Deploying with Ionic Cloud
+
+The final main point to make is the ability to build your app in the cloud.
+
+To do so, we will take the following steps:
+
+* establish a security certificate in the ionic cloud dashboard
+* 
 
 ## 7.1 Android App Keystore
 
