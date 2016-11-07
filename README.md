@@ -1268,6 +1268,7 @@ Return to [Overview](#overview)
 * This requires that the ADK is installed.
 * Requires that you have the proper USB drivers for your device
   * OSX: [Android File Transfer](https://www.android.com/filetransfer/)
+  * [Transfer files on Android](https://support.google.com/nexus/answer/2840804?hl=en&ref_topic=6023296)
   * Windows: Google USB Driver via the Android SDK Manager
 * The target device is attached via USB to your computer.  
 * You've located the `adb` tool (`<ADK Directory>\platform-tools\`)
