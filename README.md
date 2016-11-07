@@ -1140,7 +1140,7 @@ Return to [Overview](#overview)
 
 # 5.0 Angular and Ionic Basic Concepts
 
-Let's review some principle features and mechanics of the frameworks with experts from the above project exaples:
+[Let's review some principle features and mechanics of the framework](https://docs.angularjs.org/guide/concepts)
 
 ## 5.1 Angular/Ionic Directives
 
