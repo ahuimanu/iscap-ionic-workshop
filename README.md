@@ -984,6 +984,10 @@ Return to [Overview](#overview)
 
 ![SQL and NoSQL](http://i39.photobucket.com/albums/e188/ahuimanu/cloud_sql_nosql_cropped_zps9i18pkbj.jpg)
 
+Return to [Overview](#overview)
+
+----
+
 ## 4.1 Ionic and Firebase
 
 Using a Backend-as-a-Service REST API for data persistence.
@@ -993,11 +997,19 @@ We use a hybrid of these sources:
 * [http://ionicframework.com/docs/guide/starting.html](http://ionicframework.com/docs/guide/starting.html)
 * [https://www.firebase.com/docs/web/libraries/ionic/guide.html](https://www.firebase.com/docs/web/libraries/ionic/guide.html)
 
+Return to [Overview](#overview)
+
+----
+
 ### 4.1.1 Converting the Previous Example to use Firebase
 
 Complete the simple example in [The Ionic Book](http://ionicframework.com/docs/guide/).
 
 **NOTE**: Take note that the completed example above uses LocalStorage for persistence.
+
+Return to [Overview](#overview)
+
+----
 
 ### 4.1.2 NoSQL Goal
 
@@ -1005,13 +1017,15 @@ Connect our application to a Cloud-based persistence service like Firebase.
 
 ![Let's try Firebase: Credit: http://kikithedeveloper.weebly.com/blog/firebase-api-child-added](http://i39.photobucket.com/albums/e188/ahuimanu/FirebaseAPIs-Kiki_zpsif4qjqg1.png)
 
-
-
 Let's try [Firebase](https://www.firebase.google.com).
 
 * Create an account
 * Create a new project
 * Connect
+ 
+Return to [Overview](#overview)
+
+----
 
 ### 4.1.3 Integrating Firebase
 
@@ -1079,6 +1093,10 @@ angular.module("starter", ["ionic", "firebase"])
 });
 ```
 
+Return to [Overview](#overview)
+
+----
+
 ## 4.2 Firebase APIs
 
 ### 4.2.1 REST API
@@ -1087,11 +1105,19 @@ The REST api calls HTTP endpoints for CRUD operations.
 
 [Firebase Rest Code](https://github.com/ahuimanu/iscap-ionic-workshop/tree/master/IonicAndAngularFire)
 
+Return to [Overview](#overview)
+
+----
+
 ### 4.2.2 AngularFire API
 
 The AngularFire api makes JavaScript calls that are embedded in your Angular application.
 
 [AngularFire Code](https://github.com/ahuimanu/iscap-ionic-workshop/tree/master/IonicAndAngularFire)
+
+Return to [Overview](#overview)
+
+----
 
 # 5.0 Angular and Ionic Basic Concepts
 
@@ -1106,23 +1132,56 @@ Directives can be custom attributes or elements:
 <person>{{name}}</person>
 ```
 
+Return to [Overview](#overview)
+
+----
+
 ## 5.2 Angular/Ionic Views and Models
 
 ![Views and Models](http://i39.photobucket.com/albums/e188/ahuimanu/concepts-databinding1_zpshrebvadx.png)
 
 ![Scope](http://i39.photobucket.com/albums/e188/ahuimanu/concepts-databinding2_zpsz0ufdacq.png)
 
+Return to [Overview](#overview)
+
+----
+
 ## 5.3 Angular/Ionic Controllers and Services
 
 ![Controllers and Services](http://i39.photobucket.com/albums/e188/ahuimanu/concepts-module-service_zpsg960gvph.png)
 
+Return to [Overview](#overview)
+
+----
+
 # 6.0 Ionic Services
+
+Ionic has two main organizational branches:
+
+* [ionic.io](http://ionic.io/) - for-profit services
+* [ionicframework.com](http://ionicframework.com/) - open source
+* 
+Return to [Overview](#overview)
+
+----
 
 ## 6.1 Ionic Creator
 
+Return to [Overview](#overview)
+
+----
+
 ## 6.2 Ionic Cloud
 
+Return to [Overview](#overview)
+
+----
+
 ## 6.3 Ionic Lab
+
+Return to [Overview](#overview)
+
+----
 
 # 7.0 Packaging and Deploying with Ionic Cloud
 
