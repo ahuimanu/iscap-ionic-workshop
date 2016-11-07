@@ -976,7 +976,9 @@ Complete the simple example in [The Ionic Book](http://ionicframework.com/docs/g
 
 ### 4.1.2 NoSQL Goal
 
-Can we use a BaaS REST API as a solution for storing the data we need?
+Connect our application to a Cloud-based persistence service like Firebase.
+
+![Let's try Firebase](http://i39.photobucket.com/albums/e188/ahuimanu/FirebaseAPIs-Kiki_zpsif4qjqg1.png)
 
 Let's try [Firebase](https://www.firebase.google.com).
 
