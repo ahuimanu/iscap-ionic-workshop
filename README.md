@@ -15,7 +15,7 @@ Presented by: Jeffry Babb, Kareem Dana, and Musa Jafar
   * 1.2 [Apache Cordova](#12-apache-cordova)
 * 2.0 [Ionic Basics](#20-ionic-basics)
   * 2.1 [Environment](#21-environment)
-  * 2.2 [Project Seed](#23-project-seeding)
+  * 2.2 [Project Seed](#22-project-seeding)
   * 2.3 [Ionic Codepen Demos](#23-ionic-codepen-demos)
 * 3.0 [Todo Example](#30-todo-example) (The Ionic Book)
   * 3.1 [Starting the App](#31-starting-the-app)

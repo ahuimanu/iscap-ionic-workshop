@@ -3,6 +3,7 @@
  * from local storage, and also lets us save and load the
  * last active project index.
  */
+ angular.module('IonicAndFirebase', ['ionic', 'firebase'])
 .factory('Projects', function() {
   
   var Projects = {};
