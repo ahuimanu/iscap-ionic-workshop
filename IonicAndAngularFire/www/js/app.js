@@ -31,9 +31,9 @@ angular.module('IonicAndAngularFire', ['ionic', 'firebase'])
   var AngularFireService = {};
 
   /* AngularFire 1.x */
-  //AngularFireService.projectsUrl = "https://ionic-and-firebase.firebaseio.com/Projects";
+  AngularFireService.projectsUrl = "https://ionic-and-firebase.firebaseio.com/Projects";
   //AngularFireService.projectsRef = new Firebase(AngularFireService.projectsUrl);
-  //AngularFireService.lastActiveProjectUrl = "https://ionic-and-firebase.firebaseio.com/lastActiveProject";
+  AngularFireService.lastActiveProjectUrl = "https://ionic-and-firebase.firebaseio.com/lastActiveProject";
   //AngularFireService.lastActiveProjectRef = new Firebase(AngularFireService.lastActiveProjectUrl);
   
   /* AngularFire 2.x */
@@ -82,15 +82,21 @@ angular.module('IonicAndAngularFire', ['ionic', 'firebase'])
     //the angularfire 3.x approach
     // See https://firebase.google.com/docs/web/setup#project_setup for how to
     // auto-generate this config
+    /*
     var config = {
       apiKey: "AIzaSyAsyFaAjeoM1voGv_Co22UapUgpkfurvPo",
       authDomain: "ionic-and-firebase.firebaseapp.com",
       databaseURL: "https://ionic-and-firebase.firebaseio.com"
     };
-    
+  
     firebase.initializeApp(config);
+    */
     
-    var tasks = firebase.database().ref();
+    //var ref = firebase.database().ref();
+    
+    var ref = firebase.database().ref().child("Projects").child(index).child("tasks");
+    
+    var tasks = $firebaseArray(ref);
     
     //don't for get asynch
     tasks.$loaded().then(function(){
