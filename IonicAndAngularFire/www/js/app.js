@@ -76,8 +76,8 @@ angular.module('IonicAndAngularFire', ['ionic', 'firebase'])
     console.log(url);
     
     //the angularfire 2.x approach
-    var ref = new Firebase(url);
-    var tasks = $firebaseArray(ref);
+    //var ref = new Firebase(url);
+    //var tasks = $firebaseArray(ref);
     
     //the angularfire 3.x approach
     // See https://firebase.google.com/docs/web/setup#project_setup for how to
